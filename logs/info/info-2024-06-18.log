@@ -1,0 +1,19 @@
+2024-06-18 14:13:30.357 [com.kelbzy.netty.tcpip.StartApplication][main][55][INFO] - Starting StartApplication on Kelbzy with PID 15284 (D:\学习文档\netty-demo1\target\classes started by 10422 in D:\学习文档\netty-demo1)
+2024-06-18 14:13:30.359 [com.kelbzy.netty.tcpip.StartApplication][main][651][INFO] - No active profile set, falling back to default profiles: default
+2024-06-18 14:13:30.860 [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener][main][136][INFO] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-06-18 14:14:10.099 [com.kelbzy.netty.tcpip.StartApplication][main][55][INFO] - Starting StartApplication on Kelbzy with PID 16084 (D:\学习文档\netty-demo1\target\classes started by 10422 in D:\学习文档\netty-demo1)
+2024-06-18 14:14:10.103 [com.kelbzy.netty.tcpip.StartApplication][main][651][INFO] - No active profile set, falling back to default profiles: default
+2024-06-18 14:14:10.498 [com.kelbzy.netty.tcpip.StartApplication][main][61][INFO] - Started StartApplication in 0.615 seconds (JVM running for 1.11)
+2024-06-18 14:14:10.669 [com.kelbzy.netty.tcpip.server.NettyTcpServer][main][64][INFO] - Netty tcp server start success,port=7000
+2024-06-18 14:14:10.723 [com.kelbzy.netty.tcpip.cilent.NettyTcpClient][main][54][INFO] - connect tcp server host = 127.0.0.1,port = 7000 success
+2024-06-18 14:14:10.725 [com.kelbzy.netty.tcpip.server.ServerChannelHandler][nioEventLoopGroup-3-1][38][INFO] - tcp client /127.0.0.1:63497 connect success
+2024-06-18 14:14:10.751 [com.kelbzy.netty.tcpip.server.ServerChannelHandler][nioEventLoopGroup-3-1][25][INFO] - Netty tcp server receive message: hello world 0
+2024-06-18 14:14:10.752 [com.kelbzy.netty.tcpip.cilent.ClientChannelHandler][nioEventLoopGroup-4-1][16][INFO] - Netty tcp client receive msg :  response message hello world 0
+2024-06-18 14:14:10.752 [com.kelbzy.netty.tcpip.server.ServerChannelHandler][nioEventLoopGroup-3-1][25][INFO] - Netty tcp server receive message: hello world 1hello world 2hello world 3hello world 4hello world 5hello world 6
+2024-06-18 14:14:10.752 [com.kelbzy.netty.tcpip.cilent.ClientChannelHandler][nioEventLoopGroup-4-1][16][INFO] - Netty tcp client receive msg :  response message hello world 1hello world 2hello world 3hello world 4hello world 5hello world 6
+2024-06-18 14:14:10.752 [com.kelbzy.netty.tcpip.server.ServerChannelHandler][nioEventLoopGroup-3-1][25][INFO] - Netty tcp server receive message: hello world 7
+2024-06-18 14:14:10.753 [com.kelbzy.netty.tcpip.server.ServerChannelHandler][nioEventLoopGroup-3-1][25][INFO] - Netty tcp server receive message: hello world 8hello world 9
+2024-06-18 14:14:10.753 [com.kelbzy.netty.tcpip.cilent.ClientChannelHandler][nioEventLoopGroup-4-1][16][INFO] - Netty tcp client receive msg :  response message hello world 7
+2024-06-18 14:14:10.753 [com.kelbzy.netty.tcpip.cilent.ClientChannelHandler][nioEventLoopGroup-4-1][16][INFO] - Netty tcp client receive msg :  response message hello world 8hello world 9
