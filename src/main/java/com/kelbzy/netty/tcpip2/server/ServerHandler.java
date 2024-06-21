@@ -7,6 +7,8 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
 
+import java.nio.charset.Charset;
+
 /**
  * @author kelbzy
  * @Classname ServerHandler
@@ -38,7 +40,11 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
 //        byteBuf.writeBytes((ByteBuf) msg);
 
         ByteBuf byteBuf = (ByteBuf) msg;
+//        String data = byteBuf.toString(CharsetUtil.UTF_8);
+//        System.out.println("接收客户端数据: " + data);
+//        System.out.println("接收客户端数据" +msg);
 
+//        System.out.println("接收客户端数据" + byteBuf.toString(Charset.defaultCharset()));
         System.out.println("接收客户端数据" + byteBuf.toString(CharsetUtil.UTF_8));
 
         super.channelRead(ctx, msg);
