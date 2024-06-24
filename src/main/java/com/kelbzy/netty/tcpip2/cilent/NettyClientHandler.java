@@ -23,7 +23,7 @@ public class NettyClientHandler extends SimpleChannelInboundHandler<Object> {
 
         LOGGER.info("接收服务器端数据: " + receivedData);
 
-        // 在这里添加回应消息的代码
+        // 回应消息
         String response = "i have recived the news: " + receivedData;
 
         ByteBuf responseByteBuf = Unpooled.copiedBuffer(response, CharsetUtil.UTF_8);
@@ -34,7 +34,7 @@ public class NettyClientHandler extends SimpleChannelInboundHandler<Object> {
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         // 发送初始消息到服务端
-        String initialMsg = "connection builded！！！";
+        String initialMsg = "connection builded!!!";
 
         ctx.writeAndFlush(Unpooled.copiedBuffer(initialMsg, CharsetUtil.UTF_8));
     }
